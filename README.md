@@ -9,15 +9,19 @@ myAGV 2023(AMR)과 myCobot(Robot Arm)을 연동해 주문 접수부터 선반 �
 선반 앞에서 AMR이 ArUco 마커를 기준으로 정렬합니다. 정렬이 끝나면 로봇팔이 물품을 집고, AMR은 파지 완료 신호를 받아 지정 구역으로 이동합니다. 배치 완료 이후에는 주차 위치로 복귀합니다.
 
 <선반 이동>
+
 <img width="320" height="569" alt="AMMR_Picking (4)" src="https://github.com/user-attachments/assets/fa2d5468-b461-41a6-89c7-13d32e6b39bc" />
 
 <선반 앞 정렬>
+
 <img width="320" height="569" alt="AMMR_Picking" src="https://github.com/user-attachments/assets/2d1777cf-06d4-42e2-a240-0dfa9897fdad" />
 
 <파지>
+
 <img width="320" height="569" alt="AMMR_Picking (1)" src="https://github.com/user-attachments/assets/8608d433-bb55-4143-96ee-e26cda7d13a5" />
 
 <운반 및 배치>
+
 <img width="320" height="569" alt="AMMR_Picking (2)" src="https://github.com/user-attachments/assets/56d3055d-65fc-4151-9385-c467db378688" />
 
 - [최종 발표 자료](doc/ROS2_AGV로봇팔_최종발표_final.pdf)
