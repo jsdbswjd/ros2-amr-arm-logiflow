@@ -8,21 +8,13 @@ myAGV 2023(AMR)과 myCobot(Robot Arm)을 연동해 주문 접수부터 선반 �
 
 선반 앞에서 AMR이 ArUco 마커를 기준으로 정렬합니다. 정렬이 끝나면 로봇팔이 물품을 집고, AMR은 파지 완료 신호를 받아 지정 구역으로 이동합니다. 배치 완료 이후에는 주차 위치로 복귀합니다.
 
-**<선반 이동>**
+| 선반 이동 | 선반 앞 정렬 |
+| :---: | :---: |
+| <img width="280" alt="AMR이 선반으로 이동하는 장면" src="https://github.com/user-attachments/assets/fa2d5468-b461-41a6-89c7-13d32e6b39bc" /> | <img width="280" alt="AMR이 선반 앞에 정렬하는 장면" src="https://github.com/user-attachments/assets/2d1777cf-06d4-42e2-a240-0dfa9897fdad" /> |
 
-<img width="320" height="569" alt="AMMR_Picking (4)" src="https://github.com/user-attachments/assets/fa2d5468-b461-41a6-89c7-13d32e6b39bc" />
-
-**<선반 앞 정렬>**
-
-<img width="320" height="569" alt="AMMR_Picking" src="https://github.com/user-attachments/assets/2d1777cf-06d4-42e2-a240-0dfa9897fdad" />
-
-**<파지>**
-
-<img width="320" height="569" alt="AMMR_Picking (1)" src="https://github.com/user-attachments/assets/8608d433-bb55-4143-96ee-e26cda7d13a5" />
-
-**<운반 및 배치>**
-
-<img width="320" height="569" alt="AMMR_Picking (2)" src="https://github.com/user-attachments/assets/56d3055d-65fc-4151-9385-c467db378688" />
+| 파지 | 운반 및 배치 |
+| :---: | :---: |
+| <img width="280" alt="로봇팔이 물품을 집는 장면" src="https://github.com/user-attachments/assets/8608d433-bb55-4143-96ee-e26cda7d13a5" /> | <img width="280" alt="물품을 운반해 지정 위치에 놓는 장면" src="https://github.com/user-attachments/assets/56d3055d-65fc-4151-9385-c467db378688" /> |
 
 - [최종 발표 자료](doc/ROS2_AGV로봇팔_최종발표_final.pdf)
 
@@ -47,12 +39,12 @@ myAGV 2023(AMR)과 myCobot(Robot Arm)을 연동해 주문 접수부터 선반 �
 
 ## 측정 결과
 
-초기 필터 적용 전후 주행 로그에서 **명령이 활성화된 구간의 속도 추종 Normalized RMS 오차**를 비교했습니다.
+초기 필터 적용 전후 주행 로그에서 **명령이 활성화된 구간의 속도 추종 RMS 오차**를 비교했습니다.
 
 | 지표 | 적용 전 | 적용 후 | 감소율 |
 | --- | ---: | ---: | ---: |
-| Normalized 선속도 RMS 오차 | 0.0609 m/s | 0.0247 m/s | 59.4% |
-| Normalized 각속도 RMS 오차 | 0.2290 rad/s | 0.0655 rad/s | 71.4% |
+| 선속도 RMS 오차 | 0.0609 m/s | 0.0247 m/s | 59.4% |
+| 각속도 RMS 오차 | 0.2290 rad/s | 0.0655 rad/s | 71.4% |
 
 위 수치는 속도 필터 비교 실험의 결과입니다. 최종 시연의 물류 작업 성공률은 별도 지표입니다.
 
